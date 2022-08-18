@@ -3,173 +3,152 @@
 *{
     border: 0;
     margin: 0;
-    /* border: solid; */
 }
+/* Start Header Part with navigatio menu */
 .container{
-    max-width: 1600px;    
-    display: flex;
-    flex-direction: column;
+    width: 1600px;
+    /* border: solid; */
     margin: auto;
     font-family: roboto;
-    box-shadow: 0px 10px 14px -7px #505050;    
+    box-shadow: 0px 10px 14px -7px #505050;
 }
-
-/* Start Header Part with navigatio menu */
 
 .header{
-    display: flex;
-    flex-direction: row;
-    /* border: solid blue;     */
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
     background-color: #636c79;
-    padding: 2em;    
-    /* flex-wrap: wrap; */
-}
-
-.logo {
- flex: 10%
+    padding-top: 25px;
+    padding-left: 40px;
+    /* height: 150px; */
 }
 
 .menu-items{
-    flex: 60%;
     display: flex;
     list-style: none;
     color: #ffff;
-    justify-content: space-around;    
-    column-gap: 2em;
-    float: left;    
+    /* border: solid; */
+    width: 800px;
+    justify-content: space-between;
 }
 
 .header-button{  
-    flex: 10%;
-    float: right;
-    /* position: relative;   */
-    /* left: 50px; */
-    width: 12em;
-    height: 4em;
+    position: relative;  
+    left: 50px;
+    width: 180px;
+    height: 40px;
     border: 1px #f8f9f9 solid;   
     background-color: transparent; 
     color: #fff;    
 }
+
 /* END Header Part with navigatio menu */
 
 /* START introduction top part */
 .introduction{
-    /* display: grid;    
+    display: grid;    
     grid-template-columns: 1fr 1fr;
+    background-color: #636c79;
     padding-top: 25px;
     padding-left: 40px;    
-    height: 800px; */
-    display: flex;
-    flex-direction: row;
-    background-color: #636c79;
-    column-gap: 4em;
-    /* max-width: 1600px; */
+    height: 800px;
 }
 
-.desc{    
-    display: flex;
-    flex-direction: column;
-}
-.desc > *{
-    flex-basis: 100%;
-}
 .intro-image{
-    width: 35em;    
-    height: 40em;
-    padding: 5em;
+    display: block;
+    height: 600px;
+    width: 500px;
     object-fit: cover;
+    padding-top: 50px;
+    padding-left: 100px;    
 }
-.introduction-image{
-    margin: auto;
+
+.desc{
+    display: grid;
+    /* border: solid; */
+    width: 600px;
+    height: 550px;
+    padding-top: 50px;
 }
+
 .desc h1{
     position: relative;
-    top: 3em;
+    top: 50px;
     color: #ffff;
     font-family: Raleway;
-    font-size: 4em;
-    margin-bottom: 3.5em;
+    font-size: 65px;
 }
 
 .desc h4{
+    padding-top: 70px;
     color: #c6c9ce;
     font-family: Roboto;
     line-height: 30px;
-    margin-bottom: 2em;    
-    font-size: 1.5em;
-}
-
-
-.email-box{
-    width: 35em;    
+    padding-bottom: 50px;
+    /* border: solid; */
+    width: 500px;
 }
 
 #email{
-    height: 4em;
-    width: 20em;    
+    height: 60px;
+    width: 400px;    
+}
+
+.envelope{
+    position: relative;
+    top: -40px;
+    left: 5px;
 }
 
 #submit{
     position: relative;
     left: -4px;
-    height: 4.1em;
+    height: 62px;
     margin-left: none;
-    width: 9em;
-    border: 6px solid #ffff;
+    width: 150px;
+    border: 5px solid #ffff;
     background-color: #8bb7a2;
     color: #ffff;
 }
-
 /* STOP introduction top part */
 
 /* <!-- START Of Company Numbers section   --> */
-
-.company-details{
-    display: flex;
-    flex-direction: column;
-    /* max-width: 70vw; */
+.company-details-heading{
+    /* border: solid; */
+    text-align: center;
+    margin-top: 100px;
+    font-family: raleway;
+    font-weight: 800;
+    font-size: 45px;
 }
 
 .stats{
-    display: flex;
-    flex-direction: row;
-    column-gap: 3em;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+    font-family: roboto;
+    font-size: 20px;
+    justify-content: space-between;
+    justify-items: center;
     list-style: none;
     text-align: center;
-    font-size: 2em;
-}
-.company-details-image{
-    /* max-width: 80em; */
-    width: 75%;
-    margin: auto;
-    padding: 4em;
+    margin-bottom: 100px;
 }
 
 .number{
-    font-size: 4vw;
-    font-weight: 700;    
-    margin-bottom: 1em;   
+    font-size: 50px;
+    font-weight: 700;
 }
-
-.company-details-heading{
-    text-align: center;
-    margin-top: 3em;
-    font-family: raleway;
-    font-weight: 800;
-    font-size: 3em;
-    margin-bottom: 2em;
+.company-details-image{
+    width: 1600px;
+    height: 800px;    
+    object-position: top;
+    object-fit: cover;
 }
 
 /* <!-- END Of Company Numbers section   --> */
 
 
 /* <!-- Start Of Company Feature cards --> */
-.company-features{
-    display: flex;
-    flex-direction: column;
-}
-
 .company-featues-heading{
     text-align: center;
     font-family: raleway;
@@ -277,23 +256,21 @@
 /* <!-- START Footer Section  --> */
 
 .logo-section{
-    /* border: solid red; */
     display: grid;
     grid-template-columns: 1fr 1fr; 
     background-color: #10181d;    
     margin-top: 80px;
-    /* padding-top: 50px;
+    padding-top: 50px;
     padding-left: 7%;
     padding-right: 80px;
-    padding-bottom: 30px;   */
-    padding: 3em;
+    padding-bottom: 30px;  
 }
 
 .line{
     display: grid;
     background-color: #10181d;
     grid-template-columns: 80px 1440px 80px;
-    max-width: 1600px;   
+    width: 1600px;   
 }
 
 .middle{
@@ -330,63 +307,6 @@
 
 }
 
-@media (max-width: 768px) {
-    .introduction{        
-        flex-direction: column;
-        padding-bottom: 2em;
-    }
-    .desc-heading-text, .email-box{
-        /* border: solid; */
-        margin: auto;
-        text-align: center;
-    }
-    .desc h1{
-        top: 0em;
-        margin-bottom: 1em;
-    }
-    .stats{
-        column-gap: 1em;
-        padding-left: 0px;
-    }
-    .company-feature-card{
-        display: flex;
-        flex-direction: column;
-        width: auto;        
-    }
-    .company-feature-card > *{
-        text-align: center;
-    }
-    .company-feature-card:nth-child(2){
-        display: flex;
-        flex-direction: column;
-        flex-direction: column-reverse;
-        /* border: solid; */
-    }
-
-    .company-team-cards{
-        grid-template-columns: 1fr;
-    }
-    .logo-section{
-        grid-template-columns: 1fr;        
-        padding: none;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-
-    }
-    .social-media{
-        margin-left: 0;        
-        margin-top: 1em;
-    }
-    .footer-links{
-        grid-template-columns: 1fr 1fr;        
-    }
-    .footer-link{
-        padding: 2em;
-    }
-
-}
 /* .team-button{
     height: 100px;
     border: solid;
