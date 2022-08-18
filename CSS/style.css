@@ -74,7 +74,8 @@
     flex-basis: 100%;
 }
 .intro-image{
-    width: 35em;    
+    /* width: 35em;     */
+    width: 75%;
     height: 40em;
     padding: 5em;
     object-fit: cover;
@@ -122,7 +123,7 @@
 
 /* STOP introduction top part */
 
-/* <!-- START Of Company Numbers section   --> */
+/* <!-- START Of Stats Company Numbers section   --> */
 
 .company-details{
     display: flex;
@@ -287,14 +288,15 @@
     padding-right: 80px;
     padding-bottom: 30px;   */
     padding: 3em;
+    border-bottom: #c6c9ce 2px solid;
 }
 
-.line{
+/* .line{
     display: grid;
     background-color: #10181d;
     grid-template-columns: 80px 1440px 80px;
     max-width: 1600px;   
-}
+} */
 
 .middle{
     border-bottom: 2px #505050 solid;  
@@ -384,6 +386,13 @@
     }
     .footer-link{
         padding: 2em;
+    }
+    .stats{
+        font-size: 3vw;
+    }
+
+    .card-image{
+        width: 75%;
     }
 
 }
