@@ -394,6 +394,16 @@
     .card-image{
         width: 75%;
     }
+    .menu-items{
+        display: none;
+    }
+    .email-box{
+        width: auto;
+    }
+    .text-part{
+        width: auto;
+
+    }
 
 }
 /* .team-button{
