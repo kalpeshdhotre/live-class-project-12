@@ -3,6 +3,8 @@
 *{
     border: 0;
     margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
     /* border: solid; */
 }
 .container{
@@ -39,13 +41,16 @@
     float: left;    
 }
 
+#email{
+    border: 1px #f8f9f9 solid;   
+}
 .header-button{  
     flex: 10%;
     float: right;
     /* position: relative;   */
     /* left: 50px; */
     width: 12em;
-    height: 4em;
+    height: 5em;
     border: 1px #f8f9f9 solid;   
     background-color: transparent; 
     color: #fff;    
@@ -100,9 +105,15 @@
     font-size: 1.5em;
 }
 
-
+#envelope{
+    background-color: #fff;
+    padding: 2px;    
+}
 .email-box{
-    width: 35em;    
+    display: flex;
+    /* width: 35em;      */
+    text-align: center;
+    /* vertical-align: middle; */
 }
 
 #email{
@@ -345,6 +356,7 @@
     .desc h1{
         top: 0em;
         margin-bottom: 1em;
+        font-size: 10vw;
     }
     .stats{
         column-gap: 1em;
@@ -403,6 +415,10 @@
     .text-part{
         width: auto;
 
+    }
+    .intro-image{
+        width: 65vw;
+        height: 65vw;
     }
 
 }
