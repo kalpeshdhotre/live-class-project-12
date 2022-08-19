@@ -25,6 +25,7 @@
     background-color: #636c79;
     padding: 2em;    
     /* flex-wrap: wrap; */
+    align-items: center;
 }
 
 .logo {
@@ -32,27 +33,28 @@
 }
 
 .menu-items{
-    flex: 60%;
+    flex: 20%;
     display: flex;
     list-style: none;
     color: #ffff;
-    justify-content: space-around;    
+    /* justify-content: space-around;     */
     column-gap: 2em;
-    float: left;    
+    float: right;
+    /* align-content: center; */
+    align-items: center;        
+    justify-content: center;
 }
 .menu-icon{
     display: none;
 }
-#email{
-    border: 1px #f8f9f9 solid;   
-}
+
 .header-button{  
     flex: 10%;
     float: right;
     /* position: relative;   */
     /* left: 50px; */
     width: 12em;
-    height: 5em;
+    height: 3em;
     border: 1px #f8f9f9 solid;   
     background-color: transparent; 
     color: #fff;    
@@ -107,27 +109,40 @@
     font-size: 1.5em;
 }
 
-#envelope{
-    background-color: #fff;
-    padding: 2px;    
-}
-.email-box{
+.email-box-container{
     display: flex;
-    /* width: 35em;      */
-    text-align: center;
-    /* vertical-align: middle; */
+    background-color: #fff;
+    /* padding-left: 5em; */
+    align-items: center;
+    justify-content: left;
+    row-gap: 3em;
+    width: 39em;
 }
 
 #email{
+    border: 1px #f8f9f9 solid;   
+    /* border: solid rebeccapurple; */
+}
+
+.email-box{
+    /* border: solid rebeccapurple; */
+    text-align: left;    
+}
+.email-box-container>i{
+    margin-left: 10px;    
+}
+#email{
     height: 4em;
-    width: 20em;    
+    border: 6px solid #ffff;
+    width: 30em;    
+    padding-left: 1em;    
 }
 
 #submit{
-    position: relative;
-    left: -4px;
-    height: 4.1em;
-    margin-left: none;
+    /* position: absolute; */
+    /* left: -4px; */
+    height: 4em;
+    /* margin-left: none; */
     width: 9em;
     border: 6px solid #ffff;
     background-color: #8bb7a2;
