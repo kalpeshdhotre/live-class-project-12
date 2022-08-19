@@ -431,7 +431,7 @@
         padding: 0;      
     }
     .footer-link{
-        padding: 2em;
+        padding: 1em;
     }
     .stats{
         font-size: 3vw;
@@ -484,6 +484,17 @@
         grid-template-columns: 1fr;
         text-align: center;
         margin-top: 6em;
+    }
+    .email-box-container{
+        width: 15em;
+        row-gap: 2px;
+    }
+    #email{
+        width: 5em;
+        padding-left: 2px;
+    }
+    #submit{
+        width: 7em;
     }
 
 }
